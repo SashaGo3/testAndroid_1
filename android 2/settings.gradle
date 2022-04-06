@@ -1,16 +1,4 @@
-
-// React Native Colo Loco autolinks native files colocated next to your JS files
-// More info here: https://github.com/jamonholmgren/react-native-colo-loco
-apply from: '../node_modules/react-native-colo-loco/scripts/android.groovy'
-linkColocatedNativeFiles([
-  appName: "LearnApp",
-  appPath: "../app",
-  appPackageName: "com.learnapp",
-  androidPath: "./android/app/src/main/java/com/learnapp"
-])
-
-
-rootProject.name = 'LearnApp'
+rootProject.name = 'IgniteDiffApp'
 apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute().text.trim(), "../scripts/autolinking.gradle");
 useExpoModules()
 
